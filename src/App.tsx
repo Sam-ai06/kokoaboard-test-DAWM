@@ -3,9 +3,12 @@ import { Grid } from '@mui/material'
 import HeaderUI from './components/HeaderUI'
 import AlertUI from './components/AlertUI'
 import SelectorUI from './components/SelectorUI'
+import { useState } from 'react'
 
 
 function App() {
+  const [city, SetCity] = useState('')
+
   return (
     <Grid  container spacing = {5} sx = {{justifycontent: 'center', alignItems: 'center'}}>
       {/*Encabezado*/}
@@ -23,7 +26,7 @@ function App() {
 
       {/*Selector*/}
       <Grid size = {{xs: 12, md: 3}}>
-        <SelectorUI />
+        <SelectorUI cityInput={city} onCityChange={SetCity}/>
       </Grid>
 
       {/*Indicadores*/}
