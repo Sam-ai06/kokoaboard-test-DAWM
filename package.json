@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Sam-ai06.github.io/kokoaboard-test-DAWM/"
+  "homepage": "https://Sam-ai06.github.io/kokoaboard-test-DAWM/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
